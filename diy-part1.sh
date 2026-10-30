@@ -10,6 +10,3 @@
 # See /LICENSE for more information.
 #
 
-
-# Add a feed source
-
