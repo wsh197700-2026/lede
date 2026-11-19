@@ -18,3 +18,5 @@ git clone https://github.com/DongyangHu/luci-app-poweroff.git package/luci-app-p
 
 #The router's web-based administration interface displays the build date
 sed -i "s/R[0-9]\+\.[0-9]\+\.[0-9]\+/& ($(TZ='Asia/Shanghai' date +"%Y.%m.%d"))/g" package/lean/default-settings/files/zzz-default-settings
+
+echo -e "#!/usr/bin/env python3\nimport sys\nsys.exit(0)" > scripts/json_overview_image_info.py
